@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Circle = {
+            radius : 0.0,
+
+            area(){
+                return Math.PI*this.radius*this.radius;
+            },
+
+            diameter(){
+                return 2*this.radius
+            },
+
+            circum(){
+                return Math.PI*this.radius
+            }
+        }
+        Circle.radius=10;
+        console.log("Area : "+Circle.area())
+        console.log("diameter : "+Circle.diameter())
+        console.log("circumference : "+Circle.circum())
+    </script>
+</body>
+</html>

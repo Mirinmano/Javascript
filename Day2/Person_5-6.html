@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Person = {
+            name : "",
+            age : 0,
+
+            up(){
+                this.age++;
+            },
+
+            down(){
+                if(this.age!=0)
+                    this.age--;
+            },
+
+            greet(){
+                console.log(`Hello, ${this.name}!`)
+            }
+        }
+
+        Person.name="Mano"
+        Person.age=20
+        Person.up()
+        console.log(Person.age);
+        Person.down()
+        console.log(Person.age);
+        Person.greet()
+    </script>
+</body>
+</html>
