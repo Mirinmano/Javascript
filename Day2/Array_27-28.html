@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names = ['Alen', 'Arthi', 'Mirin', 'Gokul', 'Sanath', 'Aakil'];
+        const namesStartingWithA = names.filter(name => name.startsWith('A'));
+        console.log(namesStartingWithA); 
+
+        const scores = [95, 82, 67, 73, 88, 54];
+        const grades = scores.map(score => {
+            if (score >= 90) return 'A';
+            if (score >= 80) return 'B';
+            if (score >= 70) return 'C';
+            if (score >= 60) return 'D';
+            return 'F';
+        });
+        console.log(grades); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let sunday = daysOfWeek.shift();
+        daysOfWeek.push(sunday);
+        console.log(daysOfWeek);
+
+        function addZ(arr){
+            arr.unshift("z")
+            arr.push("z")
+        }
+        var arr = ["a","1","1","u","h","f"]
+        addZ(arr)
+        console.log(arr)
+
+    </script>
+</body>
+</html>
