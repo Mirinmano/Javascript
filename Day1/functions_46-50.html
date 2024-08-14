@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b){
+            return a+b;
+        }
+        console.log("add(10,20) : "+add(10,20))
+        
+        function area(a,b){
+            return a*b;
+        }
+        console.log("area(22,6) : "+area(22,6))
+
+        function print() {
+            console.log("Function without parameter")
+        }
+        print()
+
+        function non(){
+
+        }
+        console.log(non())//undefined
+
+        function defaultParam(a=10,b=2){
+            console.log(Math.pow(a,b));
+        }
+        defaultParam();
+        defaultParam(2,8)
+    </script>
+</body>
+</html>

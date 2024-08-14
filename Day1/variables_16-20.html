@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;//when there is a need for redeclaration of variable
+        var a = 20;//no error is displayed
+
+        let b = 30//when the redeclaration of variable is not necessary but value can be changed
+
+        const c = 40;//value cannot be change once initialized
+        //c = 0 
+        // show error
+        
+        let x;
+        console.log(x);
+
+        var str = "Mirin Mano"
+        var num = 129
+        var bool = true
+        console.log(typeof(num))
+        console.log(typeof(str))
+        console.log(typeof(bool))
+
+        const person = {
+            fname : "mirin",
+            age : 20
+        }
+        const {fname:name} = person;
+         console.log(name);
+    </script>
+</body>
+</html>

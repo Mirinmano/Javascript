@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 100;
+        var b = 20;
+        if(a>b){
+            console.log("a greater than b")
+        }else if(a<b){
+            console.log("b greater than b");
+        }else{
+            console.log("Equal");
+        }
+
+        let c = "100"
+        if(a===c){//strict equality checks both type and value if both are equal then true
+            console.log("strictly equal")
+        }
+        if(a==c){// compares only values it implicitly converts data type and return result accordingly
+            console.log("loosly equal")
+        }
+
+        var s1 = "Mirin"
+        var s2 = "Mano"
+        if(s1<s2){
+            console.log(s1+" "+s2);
+        }else{
+            console.log(s2+" "+s1);
+        }
+
+        if(a!==c){//strict inequality checks both type and value if both are equal then true
+            console.log("strictly inequal")
+        }
+        if(b!=c){// compares only values it implicitly converts data type and return result accordingly
+            console.log("loosly inequal")
+        }
+
+        var x;
+        var y = null;
+        if(x==y){
+            console.log(x+" Equal " +y);
+        }
+    /* When compared strictly it becomes unequal since the null is an object and undefined is an type.
+    But when comparing lously it will always equal becouse both are used to denote there is nothing in the particular variable
+    */
+    </script>
+</body>
+</html>

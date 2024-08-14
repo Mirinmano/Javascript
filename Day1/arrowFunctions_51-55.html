@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const greet = (name) => {
+            console.log(`Hello, ${name}!`)
+        }
+        greet("Mano")
+        greet("Gokul")
+
+        const sum = (a,b)=>{
+            return a+b;
+        }
+        console.log(sum(10,202))
+        console.log(sum(30,2))
+
+        const isEven = num => (num%2==0)?true:false
+        console.log("isEven(245) : "+isEven(245))
+        console.log("isEven(20) : "+isEven(20))
+
+        const maxValue = (a,b) => {
+            return (a>b)?a:b
+        }
+        console.log(maxValue(10,40))
+        console.log(maxValue(931848,12804))
+
+        var myObj = {
+            value : 10,
+            mulyiplyTradition(n){
+                return this.value*n;
+            },
+            mulyiplyArrow :(n)=>{
+                return this.value*n;
+            }
+        }
+        console.log(myObj.mulyiplyTradition(2))
+        console.log(myObj.mulyiplyArrow(3))
+        //the output of arrow function is NaN this will not work on arrow functions
+    </script>
+</body>
+</html>

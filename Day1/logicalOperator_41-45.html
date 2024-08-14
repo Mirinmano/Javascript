@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = ""
+        if(!(isNaN(a))){
+            console.log("Not a Number");
+        }
+
+        let b = 11
+        if(b>=0 && b<=10){
+            console.log("In range using &&")
+        }else{
+            console.log("Not in range using &&")
+        }
+        if(b>=0 || b<=10){
+            console.log("In range using ||")
+        }else{
+            console.log("Not in range using ||")
+        }
+
+        if(false && true &&true){
+            
+        }else{
+            console.log("In this case short circuit will appear")
+        }
+    </script>
+</body>
+</html>
